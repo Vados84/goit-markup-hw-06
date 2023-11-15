@@ -402,16 +402,13 @@ p {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 96px 0;
 }
 
 .footer-flax {
   display: flex;
-  align-items: baseline;
-}
-.footer-container {
-  margin-right: 120px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social-list-title {
@@ -422,10 +419,12 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .logo-footer {
-  display: inline-block;
+  display: block;
+  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -437,11 +436,12 @@ p {
 }
 
 .footer-text {
-  width: 264px;
+  width: 288px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-bottom: 72px;
 }
 
 .social-list-flax {
@@ -465,6 +465,80 @@ p {
 .foter-social-link:focus {
   background-color: #31d0aa;
 }
+
+/* =========== Form Footer ============= */
+.form-footer {
+  /* margin-left: 80px; */
+}
+
+.form-footer-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
+}
+
+.form-footer-list-link {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  /* display: flex;
+  gap: 24px; */
+}
+.form-footer-field {
+  width: 288px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form-footer-field::placeholder {
+  color: #ffffff;
+}
+
+.form-footer-btn {
+  display: flex;
+  width: 165px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 8px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-icon-telegram {
+  margin-left: 16px;
+}
+/* =========== /Form Footer ============= */
+
 /* ============ /Footer ===================== */
 
 /* =========== Backdrop ============= */
@@ -496,9 +570,9 @@ p {
 /* =========== Modal window ============= */
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
-  padding: 24px;
+  width: 288px;
+  min-height: 623px;
+  padding: 16px;
   padding-top: 72px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -547,23 +621,10 @@ p {
 }
 
 .review-form-description {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 360px;
-  text-align: center;
-  color: #2e2f42;
-}
-
-.review-form-description {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  width: 360px;
   text-align: center;
   margin-bottom: 16px;
   color: #2e2f42;
@@ -659,7 +720,7 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   fill: #f4f4fd;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -672,11 +733,14 @@ p {
 }
 
 .review-form-checkbox-label {
+  display: flex;
+  flex-direction: row;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  line-height: 1.3;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  align-items: center;
 }
 
 .accent-color {
@@ -724,70 +788,6 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* =========== /Review Form ============= */
-
-/* =========== Form Footer ============= */
-.form-footer {
-  margin-left: 80px;
-}
-
-.form-footer-text {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-
-.form-footer-list-link {
-  display: flex;
-  gap: 24px;
-}
-.form-footer-field {
-  width: 264px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding: 8px 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.form-footer-field::placeholder {
-  color: #ffffff;
-}
-
-.form-footer-btn {
-  display: flex;
-  min-width: 165px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 8px 24px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-icon-telegram {
-  margin-left: 16px;
-}
-/* =========== /Form Footer ============= */
 
 /* !============= MEDIA STYLES FOR MOBILE ======================*/
 
@@ -1066,7 +1066,67 @@ p {
   /* ?----------- /Portfolio  STYLES FOR TABLET -------------------*/
 
   /* ?----------- Footer STYLES FOR TABLET -------------------*/
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer-container {
+    margin-left: 108px;
+    margin-right: 24px;
+  }
+
+  .footer-flax {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .form-footer {
+    margin-left: 108px;
+  }
+
+  .logo-footer {
+    display: inline-block;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .social-list-title {
+    text-align: start;
+  }
+
+  .form-footer-text {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .form-footer-list-link {
+    flex-direction: row;
+  }
+
+  .form-footer-field {
+    width: 264px;
+  }
   /* ?----------- /Footer STYLES FOR TABLET -------------------*/
+
+  /* ?----------- Modal Window STYLES FOR TABLET -------------------*/
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+  .review-form-description {
+    width: 360px;
+  }
+
+  .review-form-checkbox-label {
+    display: inline;
+  }
+
+  /* ?----------- /Modal Window STYLES FOR TABLET -------------------*/
 }
 
 /* !============= /MEDIA STYLES FOR TABLET ======================*/
@@ -1190,6 +1250,27 @@ p {
   /* ?----------- /Portfolio  STYLES FOR DESCKTOP -------------------*/
 
   /* ?----------- Footer STYLES FOR DESCKTOP -------------------*/
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-flax {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
+  .footer-container {
+    margin-left: 0;
+    margin-right: 120px;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .form-footer {
+    margin-left: 80px;
+  }
   /* ?----------- /Footer STYLES FOR DESCKTOP -------------------*/
 }
 

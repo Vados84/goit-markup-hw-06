@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!--! Header -->
     <header class="page-header">
       <div class="container header-flex">
         <nav class="page-navigation">
@@ -436,7 +436,7 @@
     </main>
 
     <!--! Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-flax">
         <div class="footer-container">
           <a class="link logo-footer" href="./index.html"
@@ -482,7 +482,7 @@
         </div>
 
         <!-- ! Modal window footer -->
-    <!-- <div class="form-footer">
+        <div class="form-footer">
           <p class="form-footer-text">Subscribe</p>
           <form class="form-footer-list-link">
             <label class="subscribe-form-label" for="user-email-footer">
@@ -504,10 +504,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--! Modal Window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-modal-btn" type="button">
           <svg class="modal-close-button-icon" width="8" height="8">
@@ -603,10 +603,12 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-policy-link accent-color"
-                >Privacy Policy</a
-              >
+              <span class="backdrop-text-privacy">
+                I accept the terms and conditions of the
+                <a href="" class="privacy-policy-link accent-color"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button class="reviwe-form-btn" type="submit">Send</button>
