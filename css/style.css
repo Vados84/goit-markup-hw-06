@@ -19,6 +19,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -30,11 +36,6 @@ p {
   margin: 0;
 }
 
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 /* -------------------------------- */
 
 /* =======Phone screen */
@@ -568,8 +569,55 @@ p {
 .footer-icon-telegram {
   margin-left: 16px;
 }
+
 /* =========== /Form Footer ============= */
 
+@media screen and (min-width: 320px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 17px;
+    margin-bottom: 72px;
+  }
+
+  .logo-footer {
+    margin-bottom: 0;
+  }
+
+  .social-list-title {
+    margin-bottom: 0px;
+  }
+
+  .social-list-flax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    margin-bottom: 72px;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+  }
+
+  .form-footer-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form-footer-list-link {
+    gap: 16px;
+  }
+}
 /* ============ /Footer ===================== */
 
 /* =========== Backdrop ============= */
@@ -841,6 +889,11 @@ p {
 
   .mobile-menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 72px 24px 40px 16px;
   }
 
   .mobile-open-btn {
@@ -858,7 +911,12 @@ p {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 72px;
+  }
+
+  .contact-social-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
   }
 
   .nav-list-link-mobile-menu {
@@ -901,7 +959,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-top: 168px;
   }
 
   .addres-list-mobile-menu {
@@ -923,8 +980,6 @@ p {
     align-items: center;
     gap: 40px;
     padding: 0;
-    margin-top: 48px;
-    margin-bottom: 40px;
   }
 
   .mobile-menu-close-btn:hover,
@@ -1000,6 +1055,10 @@ p {
     font-style: normal;
   }
 
+  .cont-info {
+    margin-bottom: 12px;
+  }
+
   .addres-list {
     font-size: 12px;
     line-height: 1.17;
@@ -1007,11 +1066,6 @@ p {
     color: #434455;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px; */
   }
 
   .addres-hover:hover,
@@ -1103,13 +1157,14 @@ p {
 
   .footer-container {
     margin-left: 108px;
-    margin-right: 24px;
+    align-items: start;
   }
 
   .footer-flax {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 24px;
     align-items: baseline;
   }
 
@@ -1131,11 +1186,11 @@ p {
 
   .form-footer-text {
     text-align: start;
-    margin-top: 0;
   }
 
   .form-footer-list-link {
     flex-direction: row;
+    gap: 24px;
   }
 
   .form-footer-field {
@@ -1178,6 +1233,10 @@ p {
   .list-addres {
     display: flex;
     gap: 40px;
+  }
+
+  .cont-info {
+    margin-bottom: 0;
   }
 
   .header-addres {
@@ -1229,11 +1288,8 @@ p {
   }
 
   .feature-list-title-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-weight: 400;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #434455;
   }
 
   .feature-list {
@@ -1288,6 +1344,7 @@ p {
   .footer-flax {
     flex-wrap: nowrap;
     align-items: baseline;
+    column-gap: 0;
   }
 
   .footer-container {
@@ -1300,7 +1357,7 @@ p {
   }
 
   .form-footer {
-    margin-left: 80px;
+    margin-left: auto;
   }
   /* ?----------- /Footer STYLES FOR DESCKTOP -------------------*/
 }
