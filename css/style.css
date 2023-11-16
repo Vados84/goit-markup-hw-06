@@ -409,7 +409,6 @@ p {
 }
 
 .overlay-wrapper {
-  height: 280px;
   position: relative;
   overflow: hidden;
   line-height: 0;
